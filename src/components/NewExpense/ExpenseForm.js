@@ -66,8 +66,8 @@ function ExpenseForm(props){
         };
     
         if(dataObj.title !== '' && dataObj.amount !== '' && dataObj.date !== ''){
-            // console.log(dataObj);
             props.onSaveExpenseData(dataObj);
+            // console.log(dataObj);
         }
 
         // after submitting the form date then we want to the clear all the states variables
@@ -91,7 +91,7 @@ function ExpenseForm(props){
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>
-                    <input type="date" value={enteredDate} min='2019-01-01' max='2030-12-31' onChange={dateChangeHandler} />
+                    <input type="date" value={enteredDate} min='2019-01-01' max='2023-12-31' onChange={dateChangeHandler} />
                 </div>
             </div>
             <div className="new-expense__actions">

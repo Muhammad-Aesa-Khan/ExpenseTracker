@@ -9,10 +9,10 @@ function NewExpense(props){
             id: Math.random().toString() 
         }
         // console.log('Form New Expense');
-        // console.log(expenseData);
-
+        
         // passing the data to the child to parent
         props.onAddNewExpenseData(expenseData);
+        // console.log(expenseData);
     }
 
     return (
